@@ -981,7 +981,7 @@ class wallet_api
 
       /** Place a limit order attempting to sell one asset for another.
        *
-       * Buying and selling are the same operation on LEEDEX. If you want to buy BTS
+       * Buying and selling are the same operation on KREEL. If you want to buy BTS
        * with USD, you should sell USD for BTS.
        *
        * The blockchain will attempt to sell the \c symbol_or_id_to_sell for as

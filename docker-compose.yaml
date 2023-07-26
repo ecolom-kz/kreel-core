@@ -2,11 +2,11 @@ version: '3'
 services:
 
  fullnode:
-  image: ghcr.io/leedex-chain/leedex-core:latest
+  image: ghcr.io/kreel-chain/kreel-core:latest
   ports:
    - "0.0.0.0:8980:8980"
   volumes:
-  - "leedex-fullnode:/var/lib/leedex"
+  - "kreel-fullnode:/var/lib/kreel"
 
 volumes:
- leedex-fullnode: { }
+ kreel-fullnode: { }

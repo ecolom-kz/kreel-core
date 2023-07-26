@@ -246,70 +246,70 @@
   },
   "initial_accounts": [{
       "name": "init0",
-      "owner_key": "LD7aarBLwxVVvWrZbusVhnTZZefdUEEGJZd1ioiTe8bpnfFe3iUU",
-      "active_key": "LD7aarBLwxVVvWrZbusVhnTZZefdUEEGJZd1ioiTe8bpnfFe3iUU",
+      "owner_key": "KRL7aarBLwxVVvWrZbusVhnTZZefdUEEGJZd1ioiTe8bpnfFe3iUU",
+      "active_key": "KRL7aarBLwxVVvWrZbusVhnTZZefdUEEGJZd1ioiTe8bpnfFe3iUU",
       "is_lifetime_member": true
     },{
       "name": "init1",
-      "owner_key": "LD8ZbCAYQj5cUep4GpGHfVkTkiWkGahvXf4t5ZE1LEAkFfzG18mY",
-      "active_key": "LD8ZbCAYQj5cUep4GpGHfVkTkiWkGahvXf4t5ZE1LEAkFfzG18mY",
+      "owner_key": "KRL8ZbCAYQj5cUep4GpGHfVkTkiWkGahvXf4t5ZE1LEAkFfzG18mY",
+      "active_key": "KRL8ZbCAYQj5cUep4GpGHfVkTkiWkGahvXf4t5ZE1LEAkFfzG18mY",
       "is_lifetime_member": true
     },{
       "name": "init2",
-      "owner_key": "LD7Bqt5o896CSQ6xp4yfcDjm3d7zkVd3wysXEVXECKjkiaSL3pHj",
-      "active_key": "LD7Bqt5o896CSQ6xp4yfcDjm3d7zkVd3wysXEVXECKjkiaSL3pHj",
+      "owner_key": "KRL7Bqt5o896CSQ6xp4yfcDjm3d7zkVd3wysXEVXECKjkiaSL3pHj",
+      "active_key": "KRL7Bqt5o896CSQ6xp4yfcDjm3d7zkVd3wysXEVXECKjkiaSL3pHj",
       "is_lifetime_member": true
     },{
       "name": "init3",
-      "owner_key": "LD6qXmJSe4P4Y4YhgTQs313m5kvNoiSirqp5MrLht193jScvccqd",
-      "active_key": "LD6qXmJSe4P4Y4YhgTQs313m5kvNoiSirqp5MrLht193jScvccqd",
+      "owner_key": "KRL6qXmJSe4P4Y4YhgTQs313m5kvNoiSirqp5MrLht193jScvccqd",
+      "active_key": "KRL6qXmJSe4P4Y4YhgTQs313m5kvNoiSirqp5MrLht193jScvccqd",
       "is_lifetime_member": true
     },{
       "name": "init4",
-      "owner_key": "LD6w87imCeyoJKBQRrdYAYkEwqDyAod9Qxxiikd1y8iWTJP85ngY",
-      "active_key": "LD6w87imCeyoJKBQRrdYAYkEwqDyAod9Qxxiikd1y8iWTJP85ngY",
+      "owner_key": "KRL6w87imCeyoJKBQRrdYAYkEwqDyAod9Qxxiikd1y8iWTJP85ngY",
+      "active_key": "KRL6w87imCeyoJKBQRrdYAYkEwqDyAod9Qxxiikd1y8iWTJP85ngY",
       "is_lifetime_member": true
     },{
       "name": "init5",
-      "owner_key": "LD6paBvikGX3FNSYU6NG5zBV8Rk8ouRJVfV15yYWUNstCm4FjhJG",
-      "active_key": "LD6paBvikGX3FNSYU6NG5zBV8Rk8ouRJVfV15yYWUNstCm4FjhJG",
+      "owner_key": "KRL6paBvikGX3FNSYU6NG5zBV8Rk8ouRJVfV15yYWUNstCm4FjhJG",
+      "active_key": "KRL6paBvikGX3FNSYU6NG5zBV8Rk8ouRJVfV15yYWUNstCm4FjhJG",
       "is_lifetime_member": true
     },{
       "name": "init6",
-      "owner_key": "LD6WHSsGEKTjN5pTFZ29s9pnZ6oPfk3wZiLbe8m1j8GFNv7zihVZ",
-      "active_key": "LD6WHSsGEKTjN5pTFZ29s9pnZ6oPfk3wZiLbe8m1j8GFNv7zihVZ",
+      "owner_key": "KRL6WHSsGEKTjN5pTFZ29s9pnZ6oPfk3wZiLbe8m1j8GFNv7zihVZ",
+      "active_key": "KRL6WHSsGEKTjN5pTFZ29s9pnZ6oPfk3wZiLbe8m1j8GFNv7zihVZ",
       "is_lifetime_member": true
     },{
       "name": "init7",
-      "owner_key": "LD7x5v7qSLy8UBkMNUmSQNuJLoSGwtBBfWVTv6HSFcvpoJF3JZBJ",
-      "active_key": "LD7x5v7qSLy8UBkMNUmSQNuJLoSGwtBBfWVTv6HSFcvpoJF3JZBJ",
+      "owner_key": "KRL7x5v7qSLy8UBkMNUmSQNuJLoSGwtBBfWVTv6HSFcvpoJF3JZBJ",
+      "active_key": "KRL7x5v7qSLy8UBkMNUmSQNuJLoSGwtBBfWVTv6HSFcvpoJF3JZBJ",
       "is_lifetime_member": true
     },{
       "name": "init8",
-      "owner_key": "LD7dWdEK4z6F8yHvxRx4ANB2Q7YQYs6XoeabzemZrsttTNxiWaZH",
-      "active_key": "LD7dWdEK4z6F8yHvxRx4ANB2Q7YQYs6XoeabzemZrsttTNxiWaZH",
+      "owner_key": "KRL7dWdEK4z6F8yHvxRx4ANB2Q7YQYs6XoeabzemZrsttTNxiWaZH",
+      "active_key": "KRL7dWdEK4z6F8yHvxRx4ANB2Q7YQYs6XoeabzemZrsttTNxiWaZH",
       "is_lifetime_member": true
     },{
       "name": "init9",
-      "owner_key": "LD7ehMzbkquc8PxhbbUKQp7SRvoi3m7AxWJS91hiDyzbaHpDJ3bC",
-      "active_key": "LD7ehMzbkquc8PxhbbUKQp7SRvoi3m7AxWJS91hiDyzbaHpDJ3bC",
+      "owner_key": "KRL7ehMzbkquc8PxhbbUKQp7SRvoi3m7AxWJS91hiDyzbaHpDJ3bC",
+      "active_key": "KRL7ehMzbkquc8PxhbbUKQp7SRvoi3m7AxWJS91hiDyzbaHpDJ3bC",
       "is_lifetime_member": true
     },{
       "name": "init10",
-      "owner_key": "LD7yao7S7eyYDot493LV2giMr5hXi11aqoE9txpJyM1onE1oixLY",
-      "active_key": "LD7yao7S7eyYDot493LV2giMr5hXi11aqoE9txpJyM1onE1oixLY",
+      "owner_key": "KRL7yao7S7eyYDot493LV2giMr5hXi11aqoE9txpJyM1onE1oixLY",
+      "active_key": "KRL7yao7S7eyYDot493LV2giMr5hXi11aqoE9txpJyM1onE1oixLY",
       "is_lifetime_member": true
     },{
       "name": "maxirmx",
-      "owner_key": "LD8B1Xn88wZiScefz49wNzvtddAcS8oYxmbq4PW7FW3GXNBi4MaT",
-      "active_key": "LD8B1Xn88wZiScefz49wNzvtddAcS8oYxmbq4PW7FW3GXNBi4MaT",
+      "owner_key": "KRL8B1Xn88wZiScefz49wNzvtddAcS8oYxmbq4PW7FW3GXNBi4MaT",
+      "active_key": "KRL8B1Xn88wZiScefz49wNzvtddAcS8oYxmbq4PW7FW3GXNBi4MaT",
       "is_lifetime_member": true
     }
   ],
   "initial_assets": [],
   "initial_balances": [{
-      "owner": "LD8B1Xn88wZiScefz49wNzvtddAcS8oYxmbq4PW7FW3GXNBi4MaT",
-      "asset_symbol": "LD",
+      "owner": "KRL8B1Xn88wZiScefz49wNzvtddAcS8oYxmbq4PW7FW3GXNBi4MaT",
+      "asset_symbol": "KREEL",
       "amount": "1000000000000000"
     }
   ],
@@ -317,40 +317,40 @@
   "initial_active_witnesses": 11,
   "initial_witness_candidates": [{
       "owner_name": "init0",
-      "block_signing_key": "LD7aarBLwxVVvWrZbusVhnTZZefdUEEGJZd1ioiTe8bpnfFe3iUU"
+      "block_signing_key": "KRL7aarBLwxVVvWrZbusVhnTZZefdUEEGJZd1ioiTe8bpnfFe3iUU"
     },{
       "owner_name": "init1",
-      "block_signing_key": "LD8ZbCAYQj5cUep4GpGHfVkTkiWkGahvXf4t5ZE1LEAkFfzG18mY"
+      "block_signing_key": "KRL8ZbCAYQj5cUep4GpGHfVkTkiWkGahvXf4t5ZE1LEAkFfzG18mY"
     },{
       "owner_name": "init2",
-      "block_signing_key": "LD7Bqt5o896CSQ6xp4yfcDjm3d7zkVd3wysXEVXECKjkiaSL3pHj"
+      "block_signing_key": "KRL7Bqt5o896CSQ6xp4yfcDjm3d7zkVd3wysXEVXECKjkiaSL3pHj"
     },{
       "owner_name": "init3",
-      "block_signing_key": "LD6qXmJSe4P4Y4YhgTQs313m5kvNoiSirqp5MrLht193jScvccqd"
+      "block_signing_key": "KRL6qXmJSe4P4Y4YhgTQs313m5kvNoiSirqp5MrLht193jScvccqd"
     },{
       "owner_name": "init4",
-      "block_signing_key": "LD6w87imCeyoJKBQRrdYAYkEwqDyAod9Qxxiikd1y8iWTJP85ngY"
+      "block_signing_key": "KRL6w87imCeyoJKBQRrdYAYkEwqDyAod9Qxxiikd1y8iWTJP85ngY"
     },{
       "owner_name": "init5",
-      "block_signing_key": "LD6paBvikGX3FNSYU6NG5zBV8Rk8ouRJVfV15yYWUNstCm4FjhJG"
+      "block_signing_key": "KRL6paBvikGX3FNSYU6NG5zBV8Rk8ouRJVfV15yYWUNstCm4FjhJG"
     },{
       "owner_name": "init6",
-      "block_signing_key": "LD6WHSsGEKTjN5pTFZ29s9pnZ6oPfk3wZiLbe8m1j8GFNv7zihVZ"
+      "block_signing_key": "KRL6WHSsGEKTjN5pTFZ29s9pnZ6oPfk3wZiLbe8m1j8GFNv7zihVZ"
     },{
       "owner_name": "init7",
-      "block_signing_key": "LD7x5v7qSLy8UBkMNUmSQNuJLoSGwtBBfWVTv6HSFcvpoJF3JZBJ"
+      "block_signing_key": "KRL7x5v7qSLy8UBkMNUmSQNuJLoSGwtBBfWVTv6HSFcvpoJF3JZBJ"
     },{
       "owner_name": "init8",
-      "block_signing_key": "LD7dWdEK4z6F8yHvxRx4ANB2Q7YQYs6XoeabzemZrsttTNxiWaZH"
+      "block_signing_key": "KRL7dWdEK4z6F8yHvxRx4ANB2Q7YQYs6XoeabzemZrsttTNxiWaZH"
     },{
       "owner_name": "init9",
-      "block_signing_key": "LD7ehMzbkquc8PxhbbUKQp7SRvoi3m7AxWJS91hiDyzbaHpDJ3bC"
+      "block_signing_key": "KRL7ehMzbkquc8PxhbbUKQp7SRvoi3m7AxWJS91hiDyzbaHpDJ3bC"
     },{
       "owner_name": "init10",
-      "block_signing_key": "LD7yao7S7eyYDot493LV2giMr5hXi11aqoE9txpJyM1onE1oixLY"
+      "block_signing_key": "KRL7yao7S7eyYDot493LV2giMr5hXi11aqoE9txpJyM1onE1oixLY"
     },{
       "owner_name": "maxirmx",
-      "block_signing_key": "LD8B1Xn88wZiScefz49wNzvtddAcS8oYxmbq4PW7FW3GXNBi4MaT"
+      "block_signing_key": "KRL8B1Xn88wZiScefz49wNzvtddAcS8oYxmbq4PW7FW3GXNBi4MaT"
     }
   ],
   "initial_committee_candidates": [{

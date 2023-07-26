@@ -64,7 +64,7 @@ using operation_list_11 = static_variant<typelist::builder<>
                                                 ::add<htlc_redeem_operation>         // 50
                                                 ::add<htlc_extend_operation>         // 52
                                                 ::finalize>;
-// Note: Since BSIP-40 is not to be enabled on the BitShares/LEEDEX Mainnet any time soon,
+// Note: Since BSIP-40 is not to be enabled on the BitShares/KREEL Mainnet any time soon,
 //       by now, the list of supported operations ends here.
 //       These operations are used in unit tests.
 //       As of writing, transfer_operation and limit_order_create_operation appeared on the public testnet

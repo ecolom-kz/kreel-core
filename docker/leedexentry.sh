@@ -2,7 +2,7 @@
 LEEDEXD="/usr/local/bin/witness_node"
 
 # For blockchain download
-VERSION=`cat /etc/leedex/version`
+VERSION=`cat /etc/kreel/version`
 
 ## Supported Environmental Variables
 #
@@ -79,12 +79,12 @@ if [[ ! -z "$LEEDEXD_TRUSTED_NODE" ]]; then
     ARGS+=" --trusted-node=${LEEDEXD_TRUSTED_NODE}"
 fi
 
-## Link the leedex config file into home
+## Link the kreel config file into home
 ## This link has been created in Dockerfile, already
-ln -f -s /etc/leedex/config.ini /var/lib/leedex
-ln -f -s /etc/leedex/logging.ini /var/lib/leedex
+ln -f -s /etc/kreel/config.ini /var/lib/kreel
+ln -f -s /etc/kreel/logging.ini /var/lib/kreel
 
-chown -R leedex:leedex /var/lib/leedex
+chown -R kreel:kreel /var/lib/kreel
 
 # Get the latest security updates
 apt-get update && apt-get upgrade -y -o Dpkg::Options::="--force-confold"
@@ -92,9 +92,9 @@ apt-get update && apt-get upgrade -y -o Dpkg::Options::="--force-confold"
 # Plugins need to be provided in a space-separated list, which
 # makes it necessary to write it like this
 if [[ ! -z "$LEEDEXD_PLUGINS" ]]; then
-   exec /usr/bin/setpriv --reuid=leedex --regid=leedex --clear-groups \
+   exec /usr/bin/setpriv --reuid=kreel --regid=kreel --clear-groups \
      "$LEEDEXD" --data-dir "${HOME}" ${ARGS} ${LEEDEXD_ARGS} --plugins "${LEEDEXD_PLUGINS}"
 else
-   exec /usr/bin/setpriv --reuid=leedex --regid=leedex --clear-groups \
+   exec /usr/bin/setpriv --reuid=kreel --regid=kreel --clear-groups \
      "$LEEDEXD" --data-dir "${HOME}" ${ARGS} ${LEEDEXD_ARGS}
 fi

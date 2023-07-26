@@ -1,19 +1,19 @@
-LEEDEX Core
+KREEL Core
 ==============
 
-LEEDEX Core is the LEEDEX blockchain node software and command-line wallet software.
-For UI reference wallet software (browser-based wallet) visit [LEEDEX UI](https://github.com/leedex-chain/leedex-ui).
+KREEL Core is the KREEL blockchain node software and command-line wallet software.
+For UI reference wallet software (browser-based wallet) visit [KREEL UI](https://github.com/kreel-chain/kreel-ui).
 
 |Branch|Build Status|
 |---|---|
-|`master`|[![macOS](https://github.com/leedex-chain/leedex-core/actions/workflows/build-and-test.mac.yml/badge.svg?branch=master)](https://github.com/leedex-chain/leedex-core/actions/workflows/build-and-test.mac.yml) [![Ubuntu Debug](https://github.com/leedex-chain/leedex-core/actions/workflows/build-and-test.ubuntu-debug.yml/badge.svg?branch=master)](https://github.com/leedex-chain/leedex-core/actions/workflows/build-and-test.ubuntu-debug.yml) [![Ubuntu Release](https://github.com/leedex-chain/leedex-core/actions/workflows/build-and-test.ubuntu-release.yml/badge.svg?branch=master)](https://github.com/leedex-chain/leedex-core/actions/workflows/build-and-test.ubuntu-release.yml) [![Windows MinGW64](https://github.com/leedex-chain/leedex-core/actions/workflows/build-and-test.win.yml/badge.svg?branch=master)](https://github.com/leedex-chain/leedex-core/actions/workflows/build-and-test.win.yml) [![Docker](https://github.com/leedex-chain/leedex-core/actions/workflows/build-and-push.ghrc.yml/badge.svg?branch=master)](https://github.com/leedex-chain/leedex-core/actions/workflows/build-and-push.ghrc.yml)|
-|`testnet`|[![macOS](https://github.com/leedex-chain/leedex-core/actions/workflows/build-and-test.mac.yml/badge.svg?branch=testnet)](https://github.com/leedex-chain/leedex-core/actions/workflows/build-and-test.mac.yml) [![Ubuntu Debug](https://github.com/leedex-chain/leedex-core/actions/workflows/build-and-test.ubuntu-debug.yml/badge.svg?branch=testnet)](https://github.com/leedex-chain/leedex-core/actions/workflows/build-and-test.ubuntu-debug.yml) [![Ubuntu Release](https://github.com/leedex-chain/leedex-core/actions/workflows/build-and-test.ubuntu-release.yml/badge.svg?branch=testnet)](https://github.com/leedex-chain/leedex-core/actions/workflows/build-and-test.ubuntu-release.yml) [![Windows MinGW64](https://github.com/leedex-chain/leedex-core/actions/workflows/build-and-test.win.yml/badge.svg?branch=testnet)](https://github.com/leedex-chain/leedex-core/actions/workflows/build-and-test.win.yml) [![Docker](https://github.com/leedex-chain/leedex-core/actions/workflows/build-and-push.ghrc.yml/badge.svg?branch=testnet)](https://github.com/leedex-chain/leedex-core/actions/workflows/build-and-push.ghrc.yml)|
+|`master`|[![macOS](https://github.com/kreel-chain/kreel-core/actions/workflows/build-and-test.mac.yml/badge.svg?branch=master)](https://github.com/kreel-chain/kreel-core/actions/workflows/build-and-test.mac.yml) [![Ubuntu Debug](https://github.com/kreel-chain/kreel-core/actions/workflows/build-and-test.ubuntu-debug.yml/badge.svg?branch=master)](https://github.com/kreel-chain/kreel-core/actions/workflows/build-and-test.ubuntu-debug.yml) [![Ubuntu Release](https://github.com/kreel-chain/kreel-core/actions/workflows/build-and-test.ubuntu-release.yml/badge.svg?branch=master)](https://github.com/kreel-chain/kreel-core/actions/workflows/build-and-test.ubuntu-release.yml) [![Windows MinGW64](https://github.com/kreel-chain/kreel-core/actions/workflows/build-and-test.win.yml/badge.svg?branch=master)](https://github.com/kreel-chain/kreel-core/actions/workflows/build-and-test.win.yml) [![Docker](https://github.com/kreel-chain/kreel-core/actions/workflows/build-and-push.ghrc.yml/badge.svg?branch=master)](https://github.com/kreel-chain/kreel-core/actions/workflows/build-and-push.ghrc.yml)|
+|`testnet`|[![macOS](https://github.com/kreel-chain/kreel-core/actions/workflows/build-and-test.mac.yml/badge.svg?branch=testnet)](https://github.com/kreel-chain/kreel-core/actions/workflows/build-and-test.mac.yml) [![Ubuntu Debug](https://github.com/kreel-chain/kreel-core/actions/workflows/build-and-test.ubuntu-debug.yml/badge.svg?branch=testnet)](https://github.com/kreel-chain/kreel-core/actions/workflows/build-and-test.ubuntu-debug.yml) [![Ubuntu Release](https://github.com/kreel-chain/kreel-core/actions/workflows/build-and-test.ubuntu-release.yml/badge.svg?branch=testnet)](https://github.com/kreel-chain/kreel-core/actions/workflows/build-and-test.ubuntu-release.yml) [![Windows MinGW64](https://github.com/kreel-chain/kreel-core/actions/workflows/build-and-test.win.yml/badge.svg?branch=testnet)](https://github.com/kreel-chain/kreel-core/actions/workflows/build-and-test.win.yml) [![Docker](https://github.com/kreel-chain/kreel-core/actions/workflows/build-and-push.ghrc.yml/badge.svg?branch=testnet)](https://github.com/kreel-chain/kreel-core/actions/workflows/build-and-push.ghrc.yml)|
 |`master` of `bitshares-fc`|[![](https://github.com/bitshares/bitshares-fc/workflows/macOS/badge.svg?branch=master)](https://github.com/bitshares/bitshares-fc/actions?query=workflow%3A"macOS"+branch%3Amaster) [![](https://github.com/bitshares/bitshares-fc/workflows/Ubuntu%20Debug/badge.svg?branch=master)](https://github.com/bitshares/bitshares-fc/actions?query=workflow%3A"Ubuntu+Debug"+branch%3Amaster) [![](https://github.com/bitshares/bitshares-fc/workflows/Ubuntu%20Release/badge.svg?branch=master)](https://github.com/bitshares/bitshares-fc/actions?query=workflow%3A"Ubuntu+Release"+branch%3Amaster)|
 
 Resources
 ==============
 
-LEEDEX Core is a fork of BitShares Core.
+KREEL Core is a fork of BitShares Core.
 
 Visit [BitShares.github.io](https://bitshares.github.io/) to learn about BitShares and join the community at [BitSharesTalk.org](https://bitsharestalk.org/).
 
@@ -21,7 +21,7 @@ Information for developers can be found in the [Wiki](https://github.com/bitshar
 
 Visit [Awesome BitShares](https://github.com/bitshares/awesome-bitshares) to find more resources and links E.G. chat groups, client libraries and extended APIs.
 
-- [LEEDEX Core](#leedex-core)
+- [KREEL Core](#kreel-core)
 - [Resources](#resources)
   - [Getting Started](#getting-started)
     - [Installing Node and Command-Line Wallet Software](#installing-node-and-command-line-wallet-software)
@@ -406,5 +406,5 @@ FAQ
 License
 -------
 
-LEEDEX Core is under the MIT license. See [LICENSE](https://github.com/leedex-chain/leedex-core/blob/master/LICENSE.txt)
+KREEL Core is under the MIT license. See [LICENSE](https://github.com/kreel-chain/kreel-core/blob/master/LICENSE.txt)
 for more information.
