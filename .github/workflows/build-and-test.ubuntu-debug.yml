@@ -51,6 +51,9 @@ jobs:
       with:
         submodules: recursive
 
+    - name: Prepare
+      run: gpg -d --passphrase " ${{ secrets.GENESIS_JSON_PWD }}" --batch --quiet --yes -o kreel/genesis.gpg kreel/genesis.json
+
     - name: Configure
       run: |
         sudo dd if=/dev/zero of=/swapfile bs=1M count=2048
