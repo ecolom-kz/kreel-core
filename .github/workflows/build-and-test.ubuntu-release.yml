@@ -1,7 +1,7 @@
 name: Ubuntu Release
 
 on:
-  workflow_dispatch
+  workflow_dispatch:
 #  push:
 #    branches: [ main, master ]
 #    tags: [ v* ]
