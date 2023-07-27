@@ -1,8 +1,9 @@
 name: Ubuntu Debug
 on:
-  push:
-    paths-ignore:
-      - '**.md'
+  workflow_dispatch:
+#  push:
+#    paths-ignore:
+#      - '**.md'
 
 env:
   CCACHE_COMPRESS: exists means true
