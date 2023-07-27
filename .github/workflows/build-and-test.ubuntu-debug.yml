@@ -52,7 +52,7 @@ jobs:
         submodules: recursive
 
     - name: Prepare
-      run: gpg -d --passphrase " ${{ secrets.GENESIS_JSON_PWD }}" --batch --quiet --yes -o kreel/genesis.json kreel/genesis.json.gpg
+      run: gpg -d --passphrase "${{ secrets.GENESIS_JSON_PWD }}" --batch --quiet --yes -o kreel/genesis.json kreel/genesis.json.gpg
 
     - name: Configure
       run: |

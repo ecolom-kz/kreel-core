@@ -1,8 +1,6 @@
 name: Windows MinGW64
 on:
-  push:
-    on:
-      - workflow_dispatch
+  - workflow_dispatch
 
 #    branches: [ main, master ]
 #    tags: [ v* ]
