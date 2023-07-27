@@ -1,14 +1,15 @@
 name: Ubuntu Release
 
 on:
-  push:
-    branches: [ main, master ]
-    tags: [ v* ]
-    paths-ignore:
-      - '**.md'
-  pull_request:
-    paths-ignore:
-      - '**.md'
+  - workflow_dispatch
+#  push:
+#    branches: [ main, master ]
+#    tags: [ v* ]
+#    paths-ignore:
+#      - '**.md'
+#  pull_request:
+#    paths-ignore:
+#      - '**.md'
 
 env:
   CCACHE_COMPRESS: exists means true
