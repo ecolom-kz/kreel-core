@@ -7,7 +7,6 @@ CMakeFiles
 Makefile
 compile_commands.json
 moc_*
-genesis.json
 hardfork.hpp
 
 libraries/utilities/git_revision.cpp

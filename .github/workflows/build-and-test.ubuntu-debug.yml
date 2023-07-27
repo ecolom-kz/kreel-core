@@ -51,9 +51,6 @@ jobs:
       with:
         submodules: recursive
 
-    - name: Prepare
-      run: echo ${{ secrets.GENESIS_JSON_PWD }} > kreel/genesis.json
-
     - name: Configure
       run: |
         sudo dd if=/dev/zero of=/swapfile bs=1M count=2048
