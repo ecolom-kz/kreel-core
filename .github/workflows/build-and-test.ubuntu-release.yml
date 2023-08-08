@@ -2,11 +2,11 @@ name: Ubuntu Release
 
 on:
   workflow_dispatch:
-#  push:
-#    branches: [ main, master ]
-#    tags: [ v* ]
-#    paths-ignore:
-#      - '**.md'
+  push:
+    branches: [ main, master ]
+    tags: [ v* ]
+    paths-ignore:
+    - '**.md'
   pull_request:
     paths-ignore:
     - '**.md'
@@ -73,6 +73,7 @@ jobs:
               -D CMAKE_C_COMPILER_LAUNCHER=ccache \
               -D CMAKE_CXX_COMPILER=g++ \
               -D CMAKE_CXX_COMPILER_LAUNCHER=ccache \
+              -D CMAKE_INSTALL_PREFIX=/opt/kreel \
               -Bbuild .
     - name: Load Cache
       uses: actions/cache@v3

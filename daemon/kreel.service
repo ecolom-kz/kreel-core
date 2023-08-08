@@ -3,13 +3,12 @@ Description=kreel witness node
 After=network.target
 [Service]
 User=kreel
-Group=kreel
-Type=forking
-ExecStart=/opt/kreel/bin/witness_node --data-dir=/opt/kreel/data/prod
+Type=simple
+ExecStart=/opt/kreel/bin/witness_node --data-dir=/opt/kreel/data/prod --enable-stale-production
 Restart=always
 PrivateTmp=true
 TimeoutStopSec=60s
-TimeoutStartSec=2s
+TimeoutStartSec=10s
 StartLimitInterval=120s
 StartLimitBurst=5
 [Install]
