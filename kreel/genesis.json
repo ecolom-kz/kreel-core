@@ -1,5 +1,5 @@
 {
-  "initial_timestamp": "2023-08-08T00:00:01",
+  "initial_timestamp": "2023-08-08T08:08:00",
   "max_core_supply": "1000000000000000",
   "initial_parameters": {
     "current_fees": {
@@ -309,7 +309,7 @@
   "initial_assets": [],
   "initial_balances": [{
       "owner": "KRL8RNvoX7pwRUcVDtgn2rwq87nxRwT2VSQx",
-      "asset_symbol": "KRL",
+      "asset_symbol": "KREEL",
       "amount": "1000000000000000"
     }
   ],
