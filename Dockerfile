@@ -34,8 +34,8 @@ RUN \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-ADD . /leedex-core
-WORKDIR /leedex-core
+ADD . /kreel-core
+WORKDIR /kreel-core
 
 # Compile
 RUN \
@@ -58,14 +58,14 @@ RUN \
             /usr/local/bin && \
     #
     # Obtain version
-    mkdir -p /etc/leedex && \
-    git rev-parse --short HEAD > /etc/leedex/version && \
+    mkdir -p /etc/kreel && \
+    git rev-parse --short HEAD > /etc/kreel/version && \
     cd / && \
-    rm -rf /leedex-core
+    rm -rf /kreel-core
 
 # The final image
 FROM phusion/baseimage:focal-1.2.0
-LABEL maintainer="The leedex decentralized organisation"
+LABEL maintainer="The kreel decentralized organisation"
 ENV LANG=en_US.UTF-8
 
 # Install required libraries
@@ -77,27 +77,27 @@ RUN \
       libcurl4 \
       ca-certificates \
     && \
-    mkdir -p /etc/leedex && \
+    mkdir -p /etc/kreel && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 COPY --from=build /usr/local/bin/* /usr/local/bin/
-COPY --from=build /etc/leedex/version /etc/leedex/
+COPY --from=build /etc/kreel/version /etc/kreel/
 
 WORKDIR /
-RUN groupadd -g 10001 leedex
-RUN useradd -u 10000 -g leedex -s /bin/bash -m -d /var/lib/leedex --no-log-init leedex
-ENV HOME /var/lib/leedex
-RUN chown leedex:leedex -R /var/lib/leedex
+RUN groupadd -g 10001 kreel
+RUN useradd -u 10000 -g kreel -s /bin/bash -m -d /var/lib/kreel --no-log-init kreel
+ENV HOME /var/lib/kreel
+RUN chown kreel:kreel -R /var/lib/kreel
 
 # default exec/config files
-ADD docker/default_config.ini /etc/leedex/config.ini
-ADD docker/default_logging.ini /etc/leedex/logging.ini
+ADD docker/default_config.ini /etc/kreel/config.ini
+ADD docker/default_logging.ini /etc/kreel/logging.ini
 ADD docker/leedexentry.sh /usr/local/bin/leedexentry.sh
 RUN chmod a+x /usr/local/bin/leedexentry.sh
 
 # Volume
-VOLUME ["/var/lib/leedex", "/etc/leedex"]
+VOLUME ["/var/lib/kreel", "/etc/kreel"]
 
 # rpc service:
 EXPOSE 8980
@@ -108,7 +108,7 @@ EXPOSE 4776
 STOPSIGNAL SIGINT
 
 # Temporarily commented out due to permission issues caused by older versions, to be restored in a future version
-#USER leedex:leedex
+#USER kreel:kreel
 
 # default execute entry
 ENTRYPOINT ["/usr/local/bin/leedexentry.sh"]

@@ -1,11 +1,11 @@
 [Unit]
-Description=leedex witness node
+Description=kreel witness node
 After=network.target
 [Service]
-User=leedex
-Group=leedex
+User=kreel
+Group=kreel
 Type=forking
-ExecStart=/opt/leedex/bin/witness_node --data-dir=/opt/leedex/data/prod
+ExecStart=/opt/kreel/bin/witness_node --data-dir=/opt/kreel/data/prod
 Restart=always
 PrivateTmp=true
 TimeoutStopSec=60s

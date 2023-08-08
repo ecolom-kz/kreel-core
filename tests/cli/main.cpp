@@ -411,8 +411,8 @@ BOOST_FIXTURE_TEST_CASE( create_new_account, cli_fixture )
       BOOST_CHECK(con.wallet_api_ptr->import_key("jmjatlanta", bki.wif_priv_key));
       con.wallet_api_ptr->save_wallet_file(con.wallet_filename);
 
-      // attempt to give jmjatlanta some LDs
-      BOOST_TEST_MESSAGE("Transferring LDs from MaxIRMX to jmjatlanta");
+      // attempt to give jmjatlanta some KREELs
+      BOOST_TEST_MESSAGE("Transferring KREELs from MaxIRMX to jmjatlanta");
       signed_transaction transfer_tx = con.wallet_api_ptr->transfer(
          "maxirmx", "jmjatlanta", "10000", "1.3.0", "Here are some CORE token for your new account", true
       );
@@ -1326,8 +1326,8 @@ BOOST_FIXTURE_TEST_CASE( account_history_pagination, cli_fixture )
    {
       INVOKE(create_new_account);
 
-      // attempt to give jmjatlanta some LDs
-      BOOST_TEST_MESSAGE("Transferring LDs from MaxIRMX to jmjatlanta");
+      // attempt to give jmjatlanta some KREELs
+      BOOST_TEST_MESSAGE("Transferring KREELs from MaxIRMX to jmjatlanta");
       for(int i = 1; i <= 199; i++)
       {
          signed_transaction transfer_tx = con.wallet_api_ptr->transfer("maxirmx", "jmjatlanta", std::to_string(i),
@@ -1433,12 +1433,12 @@ BOOST_AUTO_TEST_CASE( cli_multisig_transaction )
       create_multisig_acct_tx.operations.push_back(account_create_op);
       con.wallet_api_ptr->sign_transaction(create_multisig_acct_tx, true);
 
-      // attempt to give cifer.test some LDs
-      BOOST_TEST_MESSAGE("Transferring LDs from MaxIRMX to cifer.test");
+      // attempt to give cifer.test some KREELs
+      BOOST_TEST_MESSAGE("Transferring KREELs from MaxIRMX to cifer.test");
       signed_transaction transfer_tx1 = con.wallet_api_ptr->transfer("maxirmx", "cifer.test", "10000", "1.3.0", "Here are some BTS for your new account", true);
 
       // transfer bts from cifer.test to maxirmx
-      BOOST_TEST_MESSAGE("Transferring LDs from cifer.test to maxirmx");
+      BOOST_TEST_MESSAGE("Transferring KREELs from cifer.test to maxirmx");
       auto dyn_props = app1->chain_database()->get_dynamic_global_properties();
       account_object cifer_test = con.wallet_api_ptr->get_account("cifer.test");
 
@@ -1609,8 +1609,8 @@ BOOST_AUTO_TEST_CASE( cli_create_htlc )
          signed_transaction create_acct_tx = con.wallet_api_ptr->create_account_with_brain_key(bki.brain_priv_key,
                "alice", "maxirmx", "maxirmx", true);
          con.wallet_api_ptr->save_wallet_file(con.wallet_filename);
-         // attempt to give alice some LDs
-         BOOST_TEST_MESSAGE("Transferring LDs from MaxIRMX to alice");
+         // attempt to give alice some KREELs
+         BOOST_TEST_MESSAGE("Transferring KREELs from MaxIRMX to alice");
          signed_transaction transfer_tx = con.wallet_api_ptr->transfer("maxirmx", "alice", "10000", "1.3.0",
                "Here are some CORE token for your new account", true);
       }
@@ -1623,8 +1623,8 @@ BOOST_AUTO_TEST_CASE( cli_create_htlc )
                "bob", "maxirmx", "maxirmx", true);
          // this should cause resync which will import the keys of alice and bob
          generate_block(app1);
-         // attempt to give bob some LDs
-         BOOST_TEST_MESSAGE("Transferring LDs from MaxIRMX to Bob");
+         // attempt to give bob some KREELs
+         BOOST_TEST_MESSAGE("Transferring KREELs from MaxIRMX to Bob");
          signed_transaction transfer_tx = con.wallet_api_ptr->transfer("maxirmx", "bob", "10000", "1.3.0",
                "Here are some CORE token for your new account", true);
          con.wallet_api_ptr->issue_asset("bob", "5", "BOBCOIN", "Here are your BOBCOINs", true);
@@ -1736,7 +1736,7 @@ BOOST_AUTO_TEST_CASE( cli_create_htlc )
 static string encapsulate( const graphene::wallet::signed_message& msg )
 {
    fc::stringstream encapsulated;
-   encapsulated << "-----BEGIN LEEDEX SIGNED MESSAGE-----\n"
+   encapsulated << "-----BEGIN KREEL SIGNED MESSAGE-----\n"
                 << msg.message << '\n'
                 << "-----BEGIN META-----\n"
                 << "account=" << msg.meta.account << '\n'
@@ -1745,7 +1745,7 @@ static string encapsulate( const graphene::wallet::signed_message& msg )
                 << "timestamp=" << msg.meta.time << '\n'
                 << "-----BEGIN SIGNATURE-----\n"
                 << fc::to_hex( (const char*)msg.signature->data(), msg.signature->size() ) << '\n'
-                << "-----END LEEDEX SIGNED MESSAGE-----";
+                << "-----END KREEL SIGNED MESSAGE-----";
    return encapsulated.str();
 }
 
@@ -2160,8 +2160,8 @@ BOOST_AUTO_TEST_CASE( cli_create_htlc_bsip64 )
          signed_transaction create_acct_tx = con.wallet_api_ptr->create_account_with_brain_key(bki.brain_priv_key,
                "alice", "maxirmx", "maxirmx", true);
          con.wallet_api_ptr->save_wallet_file(con.wallet_filename);
-         // attempt to give alice some LDs
-         BOOST_TEST_MESSAGE("Transferring LDs from MaxIRMX to alice");
+         // attempt to give alice some KREELs
+         BOOST_TEST_MESSAGE("Transferring KREELs from MaxIRMX to alice");
          signed_transaction transfer_tx = con.wallet_api_ptr->transfer("maxirmx", "alice", "10000", "1.3.0",
                "Here are some CORE token for your new account", true);
       }
@@ -2174,8 +2174,8 @@ BOOST_AUTO_TEST_CASE( cli_create_htlc_bsip64 )
                "bob", "maxirmx", "maxirmx", true);
          // this should cause resync which will import the keys of alice and bob
          generate_block(app1);
-         // attempt to give bob some LDs
-         BOOST_TEST_MESSAGE("Transferring LDs from MaxIRMX to Bob");
+         // attempt to give bob some KREELs
+         BOOST_TEST_MESSAGE("Transferring KREELs from MaxIRMX to Bob");
          signed_transaction transfer_tx = con.wallet_api_ptr->transfer("maxirmx", "bob", "10000", "1.3.0",
                "Here are some CORE token for your new account", true);
          con.wallet_api_ptr->issue_asset("bob", "5", "BOBCOIN", "Here are your BOBCOINs", true);

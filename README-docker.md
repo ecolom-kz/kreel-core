@@ -9,13 +9,13 @@ The `Dockerfile` performs the following steps:
 
 1. Obtain base image (phusion/baseimage:0.10.1)
 2. Install required dependencies using `apt-get`
-3. Add leedex-core source code into container
+3. Add kreel-core source code into container
 4. Update git submodules
 5. Perform `cmake` with build type `Release`
 6. Run `make` and `make_install` (this will install binaries into `/usr/local/bin`
 7. Purge source code off the container
-8. Add a local leedex user and set `$HOME` to `/var/lib/leedex`
-9. Make `/var/lib/leedex` and `/etc/leedex` a docker *volume*
+8. Add a local kreel user and set `$HOME` to `/var/lib/kreel`
+9. Make `/var/lib/kreel` and `/etc/kreel` a docker *volume*
 10. Expose ports `8980` and `4776`
 11. Add default config from `docker/default_config.ini` and
     `docker/default_logging.ini`
@@ -61,10 +61,10 @@ With docker compose, multiple nodes can be managed with a single
     services:
      main:
       # Image to run
-      image: leedex/leedex-core:latest
+      image: kreel/kreel-core:latest
       #
       volumes:
-       - ./docker/conf/:/etc/leedex/
+       - ./docker/conf/:/etc/kreel/
       # Optional parameters
       environment:
        - LEEDEXD_ARGS=--help
@@ -74,7 +74,7 @@ With docker compose, multiple nodes can be managed with a single
     services:
      fullnode:
       # Image to run
-      image: leedex/leedex-core:latest
+      image: kreel/kreel-core:latest
       environment:
       # Optional parameters
       environment:
@@ -82,16 +82,16 @@ With docker compose, multiple nodes can be managed with a single
       ports:
        - "0.0.0.0:8980:8980"
       volumes:
-      - "leedex-fullnode:/var/lib/leedex"
+      - "kreel-fullnode:/var/lib/kreel"
 
 
 # Registry
 
 This container is properly registered with Ghrc container registry as:
 
-* [leedex-chain/leedex-core](ghcr.io/leedex-chain/leedex-core)
+* [kreel-chain/kreel-core](ghcr.io/kreel-chain/kreel-core)
 
-Going forward, every release tag as well as all pushes to `testnet` 
+Going forward, every release tag as well as all pushes to `testnet`
 will be built into ready-to-run containers, there.
 
 # Docker Compose
@@ -104,24 +104,24 @@ version: '3'
 services:
 
  fullnode:
-  image: ghrc.io/leedex-chain/leedex-core:latest
+  image: ghrc.io/kreel-chain/kreel-core:latest
   ports:
    - "0.0.0.0:8980:8980"
   volumes:
-  - "leedex-fullnode:/var/lib/leedex"
+  - "kreel-fullnode:/var/lib/kreel"
 
  delayed_node:
-  image: leedex/leedex-core:latest
+  image: kreel/kreel-core:latest
   environment:
    - 'LEEDEXD_PLUGINS=delayed_node witness'
    - 'LEEDEXD_TRUSTED_NODE=ws://fullnode:8980'
   ports:
    - "0.0.0.0:8981:8980"
   volumes:
-  - "leedex-delayed_node:/var/lib/leedex"
+  - "kreel-delayed_node:/var/lib/kreel"
   links:
   - fullnode
 
 volumes:
- leedex-fullnode:
+ kreel-fullnode:
 ```

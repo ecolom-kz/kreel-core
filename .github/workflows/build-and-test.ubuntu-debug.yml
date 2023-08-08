@@ -1,8 +1,9 @@
 name: Ubuntu Debug
 on:
-  push:
-    paths-ignore:
-      - '**.md'
+  workflow_dispatch:
+#  push:
+#    paths-ignore:
+#      - '**.md'
 
 env:
   CCACHE_COMPRESS: exists means true
@@ -15,7 +16,7 @@ concurrency:
 jobs:
   build:
     name: Build in Debug mode
-    timeout-minutes: 480
+    timeout-minutes: 600
     runs-on: ubuntu-20.04
     services:
       elasticsearch:
@@ -53,7 +54,7 @@ jobs:
 
     - name: Configure
       run: |
-        sudo dd if=/dev/zero of=/swapfile bs=1M count=2048
+        sudo dd if=/dev/zero of=/swapfile bs=1M count=4096
         sudo chmod 600 /swapfile
         sudo mkswap /swapfile
         sudo swapon /swapfile

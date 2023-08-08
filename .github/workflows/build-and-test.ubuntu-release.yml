@@ -1,14 +1,15 @@
 name: Ubuntu Release
 
 on:
-  push:
-    branches: [ main, master ]
-    tags: [ v* ]
-    paths-ignore:
-      - '**.md'
+  workflow_dispatch:
+#  push:
+#    branches: [ main, master ]
+#    tags: [ v* ]
+#    paths-ignore:
+#      - '**.md'
   pull_request:
     paths-ignore:
-      - '**.md'
+    - '**.md'
 
 env:
   CCACHE_COMPRESS: exists means true
@@ -65,7 +66,6 @@ jobs:
         sudo chmod 600 /swapfile
         sudo mkswap /swapfile
         sudo swapon /swapfile
-        mkdir -p build
         export -n BOOST_ROOT BOOST_INCLUDEDIR BOOST_LIBRARYDIR
         cmake -D CMAKE_BUILD_TYPE=Release \
               -D CMAKE_CXX_OUTPUT_EXTENSION_REPLACE=ON \

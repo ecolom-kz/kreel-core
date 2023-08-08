@@ -1,6 +1,6 @@
 ---
 name: Build Error
-about: Create a detailed report about an error encountered during the Leedex Core build process.
+about: Create a detailed report about an error encountered during the KREEL Core build process.
 
 ---
 
@@ -11,13 +11,13 @@ Please include a detailed Title above. Next, please complete the following secti
 * Steps To Reproduce
 * Console Logs (optional)
 
-Finally, press the 'Submit new issue' button. The Core Team will evaluate and prioritize your Bug Report for future development. 
+Finally, press the 'Submit new issue' button. The Core Team will evaluate and prioritize your Bug Report for future development.
 
 **Build Error Description**
 A clear and concise description of what the build error is.
 
 **Build Environment**
-Details about the build environment, including the relevant required libraries. Much of this information can be found in the `CMakeFiles/CMakeOutput.log`. 
+Details about the build environment, including the relevant required libraries. Much of this information can be found in the `CMakeFiles/CMakeOutput.log`.
  - Host OS:             [e.g. Ubuntu 18.04 LTS]
  - Host Physical RAM    [e.g. 4GB]
  - Source Branch/Tag:   [e.g. master or 2.0.180425]
