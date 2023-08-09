@@ -54,7 +54,7 @@ jobs:
                      libboost-regex-dev \
                      libboost-coroutine-dev \
                      libcurl4-openssl-dev
-        sudo apt-get auto-remove -y
+        sudo apt-get autoremove -y
         sudo apt-get clean -y
         df -h
     - uses: actions/checkout@v3
@@ -62,7 +62,7 @@ jobs:
         submodules: recursive
     - name: Configure
       run: |
-        sudo dd if=/dev/zero of=/swapfile bs=1M count=2048
+        sudo dd if=/dev/zero of=/swapfile bs=1M count=4096
         sudo chmod 600 /swapfile
         sudo mkswap /swapfile
         sudo swapon /swapfile

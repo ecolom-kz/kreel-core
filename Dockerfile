@@ -111,4 +111,4 @@ STOPSIGNAL SIGINT
 #USER kreel:kreel
 
 # default execute entry
-ENTRYPOINT ["/usr/local/bin/leedexentry.sh"]
+ENTRYPOINT ["/usr/local/bin/kreelentry.sh"]

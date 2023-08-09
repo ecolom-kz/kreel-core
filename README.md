@@ -41,9 +41,6 @@ Getting Started
 Build instructions and additional documentation are available in the
 [Wiki](https://github.com/bitshares/bitshares-core/wiki).
 
-Prebuilt binaries can be found in the [releases page](https://github.com/bitshares/bitshares-core/releases) for download.
-
-
 ### Installing Node and Command-Line Wallet Software
 
 We recommend building on Ubuntu 20.04 LTS (64-bit)
@@ -55,7 +52,7 @@ We recommend building on Ubuntu 20.04 LTS (64-bit)
 
 **Build Node And Command-Line Wallet:**
 
-    git clone https://github.com/bitshares/bitshares-core.git
+    git clone https://github.com/ecolom-kz/kreel-core.git
     cd bitshares-core
     git checkout master # may substitute "master" with current release tag
     git submodule update --init --recursive
@@ -64,37 +61,22 @@ We recommend building on Ubuntu 20.04 LTS (64-bit)
     cmake -DCMAKE_BUILD_TYPE=Release ..
     make
 
-**Upgrade Node And Command-Line Wallet:**
-
-    cd bitshares-core
-    git remote set-url origin https://github.com/bitshares/bitshares-core.git
-    git checkout master
-    git remote set-head origin --auto
-    git pull
-    git submodule update --init --recursive # this command may fail
-    git submodule sync --recursive
-    git submodule update --init --recursive
-    mkdir build
-    cd build
-    cmake -DCMAKE_BUILD_TYPE=Release ..
-    make
-
 **NOTE:**
 
-* BitShares requires a 64-bit operating system to build, and will not build on a 32-bit OS. Tested operating systems:
+* Kreel-core requires a 64-bit operating system to build, and will not build on a 32-bit OS. Tested operating systems:
   * Linux (heavily tested with Ubuntu LTS releases)
   * macOS (various versions)
   * Windows (various versions, Visual Studio and MinGW)
   * OpenBSD (various versions)
 
-* BitShares requires [Boost](https://www.boost.org/) libraries to build, supports version `1.58` to `1.74`.
+* Kreel-core requires [Boost](https://www.boost.org/) libraries to build, supports version `1.58` to `1.74`.
 Newer versions may work, but have not been tested.
 If your system came pre-installed with a version of Boost libraries that you do not wish to use, you may
 manually build your preferred version and use it with BitShares by specifying it on the CMake command line.
 
   Example: `cmake -DBOOST_ROOT=/path/to/boost ..`
 
-* BitShares requires [OpenSSL](https://www.openssl.org/) libraries to build, supports version `1.0.2` to `1.1.1`.
+* Kreel-core requires [OpenSSL](https://www.openssl.org/) libraries to build, supports version `1.0.2` to `1.1.1`.
 If your system came pre-installed with a version of OpenSSL libraries that you do not wish to use, you may
 manually build your preferred version and use it with BitShares by specifying it on the CMake command line.
 
@@ -105,7 +87,7 @@ manually build your preferred version and use it with BitShares by specifying it
 
 **Run Node Software:**
 
-Stay on `bitshares-core/build` directory before you run the below `witness_node` command
+Stay on `kreel-core/build` directory before you run the below `witness_node` command
 
     ./programs/witness_node/witness_node
 
@@ -120,13 +102,7 @@ It's recommended to use linux command [screen](https://help.ubuntu.com/community
 
 
 **IMPORTANT:** By default the node will start in reduced memory mode by using some of the commands detailed in [Memory reduction for nodes](https://github.com/bitshares/bitshares-core/wiki/Memory-reduction-for-nodes).
-In order to run a full node with all the account histories which usually unnecessary, you need to remove `partial-operations` and `max-ops-per-account` from your config file. Please note that currently(2018-10-17) a full node will need more than 160GB of RAM to operate and required memory is growing fast. Consider the following table as **minimal requirements** before running a node:
-
-| Default | Full | Minimal  | ElasticSearch
-| --- | --- | --- | ---
-| 150G HDD, 16G RAM | 640G SSD, 64G RAM * | 120G HDD, 4G RAM | 1TB SSD, 32G RAM
-
-\* For this setup, allocate at least 500GB of SSD as swap.
+In order to run a full node with all the account histories which usually unnecessary, you need to remove `partial-operations` and `max-ops-per-account` from your config file.
 
 To use the command-line wallet or other wallets / clients with the node, the node need to be started with RPC connection enabled, which can be done by starting the node with the `--rpc-endpoint` parameter, E.G.
 
@@ -143,7 +119,7 @@ You can run the program with `--help` parameter to see more info:
 
 ### Using Command-Line Wallet
 
-Stay on `bitshares-core/build` directory before you run the below `cli_wallet` command
+Stay on `kreel-core/build` directory before you run the below `cli_wallet` command
 
     ./programs/cli_wallet/cli_wallet
 
@@ -211,17 +187,9 @@ There is also some info in the [Wiki](https://github.com/bitshares/bitshares-cor
 
 Support
 -------
-
-Technical support is available in the [BitSharesTalk technical support subforum](https://bitsharestalk.org/index.php?board=45.0).
-
-BitShares Core bugs can be reported directly to the [issue tracker](https://github.com/bitshares/bitshares-core/issues).
-
-Questions can be posted in [Github Discussions](https://github.com/bitshares/bitshares-core/discussions).
-
-BitShares UI bugs should be reported to the [UI issue tracker](https://github.com/bitshares/bitshares-ui/issues).
+Please open an issue in this repository
 
 Up to date online Doxygen documentation can be found at [Doxygen.BitShares.org](https://doxygen.bitshares.org/hierarchy.html).
-
 
 Using Built-In APIs
 -------------
