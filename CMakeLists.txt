@@ -1,13 +1,13 @@
 # Defines KREEL library target.
-cmake_minimum_required( VERSION 3.2 FATAL_ERROR )
-project( KREEL LANGUAGES CXX C VERSION 0.1.0 )
+cmake_minimum_required( VERSION 3.14 FATAL_ERROR )
+project( KREEL LANGUAGES CXX C VERSION 0.1.1 )
 
 set( BLOCKCHAIN_NAME "KREEL" )
 
 set( CLI_CLIENT_EXECUTABLE_NAME graphene_client )
-set( GUI_CLIENT_EXECUTABLE_NAME KREEL )
+set( GUI_CLIENT_EXECUTABLE_NAME kreel )
 set( CUSTOM_URL_SCHEME "gcs" )
-set( INSTALLER_APP_ID "ff4d8b16-c5c7-46db-8717-fd576b6b2a99" )
+set( INSTALLER_APP_ID "ff4d8b26-c5c7-46db-8717-fd576b6b2a99" )
 
 set( CMAKE_CXX_STANDARD 14 )
 set( CMAKE_CXX_STANDARD_REQUIRED ON )
@@ -331,7 +331,7 @@ if (ENABLE_INSTALLER)
 
 set(VERSION_MAJOR 0)
 set(VERSION_MINOR 1)
-set(VERSION_PATCH 4)
+set(VERSION_PATCH 1)
 
 
 include(InstallRequiredSystemLibraries)

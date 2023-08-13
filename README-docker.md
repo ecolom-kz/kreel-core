@@ -27,19 +27,19 @@ The entry point simplifies the use of parameters for the `witness_node`
 
 ### Supported Environmental Variables
 
-* `$LEEDEXD_SEED_NODES`
-* `$LEEDEXD_RPC_ENDPOINT`
-* `$LEEDEXD_PLUGINS`
-* `$LEEDEXD_REPLAY`
-* `$LEEDEXD_RESYNC`
-* `$LEEDEXD_P2P_ENDPOINT`
-* `$LEEDEXD_WITNESS_ID`
-* `$LEEDEXD_PRIVATE_KEY`
-* `$LEEDEXD_TRACK_ACCOUNTS`
-* `$LEEDEXD_PARTIAL_OPERATIONS`
-* `$LEEDEXD_MAX_OPS_PER_ACCOUNT`
-* `$LEEDEXD_ES_NODE_URL`
-* `$LEEDEXD_TRUSTED_NODE`
+* `$KREELD_SEED_NODES`
+* `$KREELD_RPC_ENDPOINT`
+* `$KREELD_PLUGINS`
+* `$KREELD_REPLAY`
+* `$KREELD_RESYNC`
+* `$KREELD_P2P_ENDPOINT`
+* `$KREELD_WITNESS_ID`
+* `$KREELD_PRIVATE_KEY`
+* `$KREELD_TRACK_ACCOUNTS`
+* `$KREELD_PARTIAL_OPERATIONS`
+* `$KREELD_MAX_OPS_PER_ACCOUNT`
+* `$KREELD_ES_NODE_URL`
+* `$KREELD_TRUSTED_NODE`
 
 ### Default config
 
@@ -67,7 +67,7 @@ With docker compose, multiple nodes can be managed with a single
        - ./docker/conf/:/etc/kreel/
       # Optional parameters
       environment:
-       - LEEDEXD_ARGS=--help
+       - KREELD_ARGS=--help
 
 
     version: '3'
@@ -78,7 +78,7 @@ With docker compose, multiple nodes can be managed with a single
       environment:
       # Optional parameters
       environment:
-       - LEEDEXD_ARGS=--help
+       - KREELD_ARGS=--help
       ports:
        - "0.0.0.0:8980:8980"
       volumes:
@@ -113,8 +113,8 @@ services:
  delayed_node:
   image: kreel/kreel-core:latest
   environment:
-   - 'LEEDEXD_PLUGINS=delayed_node witness'
-   - 'LEEDEXD_TRUSTED_NODE=ws://fullnode:8980'
+   - 'KREELD_PLUGINS=delayed_node witness'
+   - 'KREELD_TRUSTED_NODE=ws://fullnode:8980'
   ports:
    - "0.0.0.0:8981:8980"
   volumes:

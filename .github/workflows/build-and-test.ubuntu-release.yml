@@ -2,11 +2,11 @@ name: Ubuntu Release
 
 on:
   workflow_dispatch:
-#  push:
-#    branches: [ main, master ]
-#    tags: [ v* ]
-#    paths-ignore:
-#      - '**.md'
+  push:
+    branches: [ main, master ]
+    tags: [ v* ]
+    paths-ignore:
+    - '**.md'
   pull_request:
     paths-ignore:
     - '**.md'
@@ -54,7 +54,7 @@ jobs:
                      libboost-regex-dev \
                      libboost-coroutine-dev \
                      libcurl4-openssl-dev
-        sudo apt-get auto-remove -y
+        sudo apt-get autoremove -y
         sudo apt-get clean -y
         df -h
     - uses: actions/checkout@v3
@@ -62,7 +62,7 @@ jobs:
         submodules: recursive
     - name: Configure
       run: |
-        sudo dd if=/dev/zero of=/swapfile bs=1M count=2048
+        sudo dd if=/dev/zero of=/swapfile bs=1M count=4096
         sudo chmod 600 /swapfile
         sudo mkswap /swapfile
         sudo swapon /swapfile
@@ -73,6 +73,7 @@ jobs:
               -D CMAKE_C_COMPILER_LAUNCHER=ccache \
               -D CMAKE_CXX_COMPILER=g++ \
               -D CMAKE_CXX_COMPILER_LAUNCHER=ccache \
+              -D CMAKE_INSTALL_PREFIX=/opt/kreel \
               -Bbuild .
     - name: Load Cache
       uses: actions/cache@v3
