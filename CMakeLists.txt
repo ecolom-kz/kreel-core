@@ -1,6 +1,6 @@
 # Defines KREEL library target.
 cmake_minimum_required( VERSION 3.14 FATAL_ERROR )
-project( KREEL LANGUAGES CXX C VERSION 0.1.1 )
+project( KREEL LANGUAGES CXX C VERSION 0.2.0 )
 
 set( BLOCKCHAIN_NAME "KREEL" )
 
@@ -330,8 +330,8 @@ add_subdirectory( tests )
 if (ENABLE_INSTALLER)
 
 set(VERSION_MAJOR 0)
-set(VERSION_MINOR 1)
-set(VERSION_PATCH 1)
+set(VERSION_MINOR 2)
+set(VERSION_PATCH 0)
 
 
 include(InstallRequiredSystemLibraries)
